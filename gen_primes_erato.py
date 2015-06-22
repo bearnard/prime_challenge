@@ -5,7 +5,7 @@ def prime_erato(num):
 
     for x in xrange(2, int(num ** 0.5) + 1):
         if arr[x]:
-            for j in range(x * x, num + 1, x):
+            for j in xrange(x * x, num + 1, x):
                 if j > num:
                     break
                 arr[j] = False
