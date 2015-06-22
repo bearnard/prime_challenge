@@ -10,6 +10,7 @@ def prime_list(num):
         for y in xrange(2, int(x ** 0.5) + 1):
             if x % y == 0:  # if y is a factor of x
                 is_prime = False
+                break  # no need to check the rest
         if is_prime:
             primes.append(x)
     return primes
