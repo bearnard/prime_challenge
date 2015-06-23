@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import sys
 
+
 def prime_list(num):
 
     primes = []
